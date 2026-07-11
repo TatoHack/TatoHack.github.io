@@ -3,15 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola_Mundo</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Hola Mundo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        :root {
+            --pico-font-family: 'Fira Code', monospace, system-ui;
+        }
+        body {
+            padding: 20px 0;
+            background-color: #12141c !important; /* Un oscuro más profundo y limpio */
+        }
+        main.container {
+            max-width: 750px; /* Evita que el texto se estire demasiado */
+        }
+        nav {
+            margin-bottom: 2rem;
+        }
+        nav a {
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        article {
+            border: 1px solid #232834 !important;
+            background: #1a1d28 !important;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            padding: 2rem !important;
+        }
+        /* Ajuste de enlaces para que no mueran en el fondo oscuro */
+        a {
+            color: #58a6ff !important; 
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul.post-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul.post-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #232834;
+        }
+    </style>
 </head>
 <body>
     <main class="container">
         <nav>
-            <ul><li><strong><a href="index.html">Mi Blog</a></strong></li></ul>
+            <ul>
+                <li><strong><a href="index.html" style="color: #fff !important;">💻 TatoHack_Blog</a></strong></li>
+            </ul>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
         </nav>
-        <hr>
+        
         <article>
             <h1>¡Hola Mundo desde Termux!</h1>
 <p>Este blog no usa frameworks pesados. Está generado con un script propio de <strong>Python</strong>.</p>
