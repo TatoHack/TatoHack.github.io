@@ -3,49 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - TatoHack</title>
+    <title>TatoHack - Data & Software</title>
+    
+    <!-- SEO Básico para que Google te indexe -->
+    <meta name="description" content="Análisis de datos, automatización y estrategias de software aplicadas a la ruleta y desarrollo.">
+    <meta name="keywords" content="ruleta, software ruleta, python, algoritmos, tatohack, desarrollo">
+    <meta name="author" content="TatoHack">
+
+    <!-- Pico CSS v2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    
     <style>
+        /* Paleta de colores Dark Premium */
         :root {
-            --pico-font-family: 'Fira Code', monospace, system-ui;
+            --background-core: #0d1117;     /* Fondo ultra oscuro estilo GitHub */
+            --card-bg: #161b22;             /* Fondo de la tarjeta principal */
+            --border-color: #30363d;        /* Bordes sutiles */
+            --text-main: #c9d1d9;           /* Texto gris claro cómodo para la vista */
+            --text-bold: #f0f6fc;           /* Títulos en blanco brillante */
+            --accent-color: #00ff66;        /* Verde neón estilo terminal para detalles */
+            --link-color: #58a6ff;          /* Azul brillante para enlaces */
+            --link-hover: #1f6feb;
         }
+
         body {
-            padding: 20px 0;
-            background-color: #12141c !important; /* Un oscuro más profundo y limpio */
+            background-color: var(--background-core) !important;
+            color: var(--text-main) !important;
+            font-family: 'Fira Code', monospace, system-ui, -apple-system, sans-serif;
+            padding: 30px 0;
         }
+
         main.container {
-            max-width: 750px; /* Evita que el texto se estire demasiado */
+            max-width: 800px;
         }
+
+        /* Barra de navegación */
         nav {
-            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+            margin-bottom: 2.5rem;
         }
         nav a {
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            color: var(--text-main) !important;
+            font-weight: 600;
+            letter-spacing: 0.5px;
         }
+        nav a:hover {
+            color: var(--accent-color) !important;
+        }
+
+        /* Tarjeta contenedora del artículo */
         article {
-            border: 1px solid #232834 !important;
-            background: #1a1d28 !important;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            border-radius: 8px;
-            padding: 2rem !important;
+            background-color: var(--card-bg) !important;
+            border: 1px solid var(--border-color) !important;
+            border-radius: 12px !important;
+            padding: 2.5rem !important;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
         }
-        /* Ajuste de enlaces para que no mueran en el fondo oscuro */
-        a {
-            color: #58a6ff !important; 
+
+        /* Tipografía interna */
+        h1, h2, h3, h4, strong {
+            color: var(--text-bold) !important;
+        }
+        h1 {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        /* Enlaces dentro del texto */
+        article a {
+            color: var(--link-color) !important;
             text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dashed var(--link-color);
         }
-        a:hover {
-            text-decoration: underline;
+        article a:hover {
+            color: var(--accent-color) !important;
+            border-bottom: 1px solid var(--accent-color);
         }
+
+        /* Lista de artículos en el Index */
         ul.post-list {
             list-style: none;
             padding-left: 0;
         }
         ul.post-list li {
-            padding: 10px 0;
-            border-bottom: 1px solid #232834;
+            padding: 15px 10px;
+            border-bottom: 1px solid var(--border-color);
+            transition: background 0.2s ease;
+        }
+        ul.post-list li:hover {
+            background-color: #21262d;
+            border-radius: 6px;
+        }
+        ul.post-list a {
+            font-size: 1.15rem;
+            border-bottom: none !important;
+        }
+
+        /* Líneas divisorias */
+        hr {
+            border-color: var(--border-color) !important;
         }
     </style>
 </head>
@@ -53,15 +111,16 @@
     <main class="container">
         <nav>
             <ul>
-                <li><strong><a href="index.html" style="color: #fff !important;">💻 TatoHack_Blog</a></strong></li>
+                <li><strong><a href="index.html">🟢 TatoHack_</a></strong></li>
             </ul>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Proyectos</a></li>
+                <li><a href="index.html">Blog</a></li>
             </ul>
         </nav>
         
         <article>
-            <h2>Artículos Recientes</h2><ul class='post-list'><li>🚀 <a href="hola_mundo.html">Hola Mundo</a></li><li>🚀 <a href="Estrategias_ruletas.html">Estrategias Ruletas</a></li></ul>
+            <h2>Artículos Disponibles</h2><ul class='post-list'><li>⚡ <a href="hola_mundo.html">Hola Mundo</a></li><li>⚡ <a href="Estrategias_ruletas.html">Estrategias Ruletas</a></li></ul>
         </article>
     </main>
 </body>
